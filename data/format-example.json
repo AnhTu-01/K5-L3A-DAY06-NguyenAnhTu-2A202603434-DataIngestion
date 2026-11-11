@@ -1,0 +1,5 @@
+{
+  "warning": "Ví dụ định dạng giả lập, không phải corpus hoặc benchmark đủ điều kiện.",
+  "page": {"source_id": "handbook-2025", "page_id": "handbook-2025-p03", "page": 3, "text": "Hạn nộp hồ sơ là ngày 30 tháng 6.", "source_path_or_url": "example/handbook.pdf"},
+  "question": {"id": "q01", "split": "dev", "question": "Hồ sơ phải nộp trước ngày nào?", "gold_source_id": "handbook-2025", "gold_page": 3, "evidence_quote": "Hạn nộp hồ sơ là ngày 30 tháng 6.", "expected_answer": "Ngày 30 tháng 6"}
+}

@@ -1,0 +1,4 @@
+strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
+A,,,,,,,,,,,,
+B,,,,,,,,,,,,
+C,,,,,,,,,,,,
