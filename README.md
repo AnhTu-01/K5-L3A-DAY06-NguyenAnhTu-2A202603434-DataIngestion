@@ -1,39 +1,42 @@
-# Day 6 — Data Ingestion Engineering: Từ tài liệu đến benchmark
+# Day 06 · Data Ingestion Engineering
 
-**Bài tập cá nhân · 4 giờ · Python · dữ liệu tự chọn**
+**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
-Bạn là data engineer chuẩn bị tri thức cho một agent. Hãy lấy ít nhất **20 trang tài liệu**, xây pipeline đọc → chuẩn hóa → chunk → biểu diễn vector → lưu → truy xuất kiểm tra; sau đó so sánh **ít nhất ba chiến lược dữ liệu** bằng cùng một benchmark và giải thích chiến lược phù hợp nhất với bộ dữ liệu của mình.
+Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
 
-Đọc [RULES.md](RULES.md), [CHECKPOINTS.md](CHECKPOINTS.md) và [SUBMISSION.md](SUBMISSION.md) theo format Day 3. Đọc [GUIDE.md](GUIDE.md) để biết yêu cầu, kế hoạch và cách đo; [RUBRIC.md](RUBRIC.md) để biết cách chấm; [PSEUDOCODE.md](PSEUDOCODE.md) để bắt đầu. File [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md) là mẫu báo cáo; [data/format-example.json](data/format-example.json) minh họa định dạng, **không phải corpus đủ điều kiện**.
+| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
+|---|---|---|
+| Tối thiểu **20 trang** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
-## Tổng quan pipeline
+## 1. Xây pipeline
 
-![Sơ đồ pipeline: đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
 
-Mỗi chunk cần giữ nguồn và vị trí để kiểm chứng. Tài liệu scan có thể cần OCR; vector có thể là semantic embedding hoặc baseline TF-IDF. Truy xuất trong Day 6 dùng để kiểm tra kho dữ liệu.
+Chọn tài liệu được phép sử dụng và giữ **nguồn, trang** trong metadata để kiểm chứng. Có thể dùng embedding thật hoặc TF-IDF + cosine làm baseline; API key không bắt buộc.
 
-## So sánh các chiến lược
+## 2. So sánh và đánh giá
 
-![Sơ đồ so sánh ba chiến lược trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
 
-Hình minh họa một cách thiết kế A/B/C: A và B so sánh chunking; B và C chỉ khác metadata filter. Bạn có thể chọn cấu hình khác, miễn là có ít nhất một phép so sánh chỉ thay một yếu tố. Các tiêu chí chấm thủ công và định nghĩa metric nằm trong [GUIDE.md](GUIDE.md).
+Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn.
 
-## Chuẩn đầu ra
+Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
 
-- Corpus ít nhất 20 trang, có nguồn được phép sử dụng, ghi rõ cách quy đổi trang, nguồn và phạm vi. Dữ liệu tự chọn và phải đủ đa dạng để so sánh.
-- Ba cấu hình có tên, có cấu hình cụ thể; cùng corpus, câu hỏi, bộ biểu diễn, cách đánh giá. Ít nhất một so sánh chỉ thay một yếu tố để giải thích nguyên nhân.
-- Ít nhất 20 câu hỏi có bằng chứng xác định được trong nguồn, tách **15 dev / 5 test** trước khi thử nghiệm; chạy đủ trên cả ba chiến lược. Test chỉ dùng sau khi cố định cấu hình.
-- Báo cáo đủ năm khía cạnh: retrieval accuracy, chunk coherence, metadata usefulness, grounding quality và data strategy impact. Kèm trace, nhãn chấm thủ công, cấu hình, hạn chế và kết luận có bằng chứng.
-- Mã nguồn, lệnh chạy, manifest nguồn, benchmark, kết quả và báo cáo có thể kiểm tra lại. Nếu không được phép chia sẻ dữ liệu gốc, nêu cách cấp quyền hoặc tái tạo; không nộp dữ liệu mật.
+## 3. Chuẩn bị bài nộp
 
-## Bắt đầu
+1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
+2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
+3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
 
-1. Chuẩn bị Python 3.11+ và corpus có quyền sử dụng. Không bắt buộc API key; bạn có thể dùng vector TF-IDF và cosine để làm baseline. Đây là biểu diễn từ vựng, không phải semantic embedding.
-2. Làm theo [GUIDE.md](GUIDE.md), dùng [PSEUDOCODE.md](PSEUDOCODE.md) làm khung và tự hiện thực mã. Tạo `src/`, `data/`, `results/` theo thiết kế của bạn.
-3. Đọc kỹ quy tắc đo trong GUIDE trước khi tự tạo benchmark; nộp theo checklist cuối GUIDE.
+## Tài liệu hướng dẫn
 
-**Đầu ra Day 6 là dữ liệu sẵn sàng cho agent.** Không bắt buộc xây chatbot hay gọi LLM. Điểm số không phụ thuộc vào chất lượng tuyệt đối của một mô hình hoặc dịch vụ trả phí.
+| Bạn cần tìm | Tài liệu |
+|---|---|
+| Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
+| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
+| Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
+| Khung pseudocode | [PSEUDOCODE.md](PSEUDOCODE.md) |
+| Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
+| Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
-## File cần điền
-
-Điền [STUDENT.md](STUDENT.md), [artifacts/experiment_log.csv](artifacts/experiment_log.csv) và bản sao [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md); xem checklist chi tiết trong [SUBMISSION.md](SUBMISSION.md).
+[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
