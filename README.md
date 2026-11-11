@@ -6,6 +6,18 @@ Bạn là data engineer chuẩn bị tri thức cho một agent. Hãy lấy ít 
 
 Đọc [RULES.md](RULES.md), [CHECKPOINTS.md](CHECKPOINTS.md) và [SUBMISSION.md](SUBMISSION.md) theo format Day 3. Đọc [GUIDE.md](GUIDE.md) để biết yêu cầu, kế hoạch và cách đo; [RUBRIC.md](RUBRIC.md) để biết cách chấm; [PSEUDOCODE.md](PSEUDOCODE.md) để bắt đầu. File [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md) là mẫu báo cáo; [data/format-example.json](data/format-example.json) minh họa định dạng, **không phải corpus đủ điều kiện**.
 
+## Tổng quan pipeline
+
+![Sơ đồ pipeline: đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+
+Mỗi chunk cần giữ nguồn và vị trí để kiểm chứng. Tài liệu scan có thể cần OCR; vector có thể là semantic embedding hoặc baseline TF-IDF. Truy xuất trong Day 6 dùng để kiểm tra kho dữ liệu.
+
+## So sánh các chiến lược
+
+![Sơ đồ so sánh ba chiến lược trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
+
+Hình minh họa một cách thiết kế A/B/C: A và B so sánh chunking; B và C chỉ khác metadata filter. Bạn có thể chọn cấu hình khác, miễn là có ít nhất một phép so sánh chỉ thay một yếu tố. Các tiêu chí chấm thủ công và định nghĩa metric nằm trong [GUIDE.md](GUIDE.md).
+
 ## Chuẩn đầu ra
 
 - Corpus ít nhất 20 trang, có nguồn được phép sử dụng, ghi rõ cách quy đổi trang, nguồn và phạm vi. Dữ liệu tự chọn và phải đủ đa dạng để so sánh.
