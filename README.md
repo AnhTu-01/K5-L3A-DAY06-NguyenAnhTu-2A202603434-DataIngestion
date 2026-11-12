@@ -18,7 +18,7 @@ Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, 
 
 ![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; phân bổ các loại câu theo [BENCHMARK.md](BENCHMARK.md).
+Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
 
 Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
 
@@ -34,7 +34,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 |---|---|
 | Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
 | Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
-| Thiết kế 20 câu hỏi và gold | [BENCHMARK.md](BENCHMARK.md) |
+| Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
 | Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
 | Khung pseudocode | [PSEUDOCODE.md](PSEUDOCODE.md) |
 | Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |

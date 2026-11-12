@@ -1,28 +1,23 @@
-# Thiết kế benchmark — 20 câu hỏi có bằng chứng
+# Benchmark — năm tiêu chí đánh giá
 
-Bộ câu hỏi do **mỗi học viên tự viết theo corpus của mình**, trước khi chạy thử. Mục tiêu là kiểm tra các lỗi khác nhau, không chỉ tìm một câu trùng từ khóa trong tài liệu. Mỗi câu gán **một loại chính**; nếu thỏa nhiều loại, chọn loại thể hiện mục tiêu kiểm tra chính.
+Mục tiêu là so sánh **ít nhất ba chiến lược dữ liệu** trên cùng corpus, model và bộ câu hỏi để chọn chiến lược phù hợp, kèm bằng chứng và lý do. Benchmark gồm bộ câu hỏi có gold, kết quả truy xuất, mẫu chấm thủ công và phân tích theo **năm tiêu chí** dưới đây.
 
-| Loại câu | Số câu trong bộ tối thiểu | Kiểm tra gì? |
-|---|---:|---|
-| Thông tin trực tiếp | 6 | Tìm được một thông tin rõ ràng có trong nguồn |
-| Paraphrase | 5 | Tìm được bằng chứng khi câu hỏi diễn đạt khác nguồn nhưng giữ nguyên ý |
-| Điều kiện / ngoại lệ | 5 | Giữ được đối tượng, điều kiện, giới hạn hoặc ngoại lệ cần thiết |
-| Phân biệt theo metadata | 4 | Dùng metadata đã biết để phân biệt các phạm vi có thể gây nhầm lẫn |
-| **Tổng** | **20** | |
+| Tiêu chí | Cần đo hoặc kiểm tra | Minh chứng |
+|---|---|---|
+| **1. Độ chính xác truy xuất** | Hit@1 và Evidence Hit@3 trên cùng bộ câu hỏi | Số câu đúng/tổng câu, top-3 và gold theo từng chiến lược |
+| **2. Tính mạch lạc của chunk** | Chunk có giữ trọn ý và đủ ngữ cảnh để hiểu không? | Chấm thủ công cùng 10 vị trí nguồn cho mỗi chiến lược, thang 0–2, kèm lý do |
+| **3. Tính hữu dụng của metadata** | Metadata có đúng, đủ để truy vết và giúp lọc phạm vi không? | Kiểm tra `source`, `page` và trường lọc trong top-3; tỷ lệ tuân thủ filter khi có yêu cầu |
+| **4. Chất lượng thông tin nền (Grounding Quality)** | Top-3 có đủ bằng chứng và điều kiện để trả lời, có truy được nguồn không? | Chấm thủ công 5 câu test mỗi chiến lược, thang 0–2, kèm lý do |
+| **5. Tác động của chiến lược dữ liệu** | Các thay đổi về chunking/metadata ảnh hưởng kết quả, chất lượng và tài nguyên ra sao? | So sánh A–B và B–C, số chunk, thời gian, chi phí, ví dụ lỗi và đánh đổi |
 
-Tách trước **15 dev / 5 test**, mỗi loại xuất hiện trong cả hai tập; câu test thứ năm tự chọn. Nếu có hơn 20 câu, chỉ cần bộ tối thiểu đáp ứng ma trận; ghi rõ cách phân chia các câu bổ sung. Không sửa câu test hoặc điều chỉnh chiến lược dựa vào test. Nếu đã xem test để sửa bài, báo rõ và tạo tập test mới nếu có thể.
+Định nghĩa chi tiết thang điểm, mẫu và công thức xem [GUIDE.md](GUIDE.md). **Grounding ở đây đánh giá độ đủ của bằng chứng truy xuất**, không phải độ chính xác của câu trả lời LLM. Hit@3 không thay cho chấm thủ công coherence hoặc grounding. Điểm bài làm theo [RUBRIC.md](RUBRIC.md); năm tiêu chí trên là các khía cạnh cần báo cáo, không phải năm loại câu hỏi.
 
-Câu metadata cần có ít nhất một trường lọc hữu ích và có giá trị đáng tin từ nguồn, ví dụ `year`, `section`, `category`, `audience`, `language` hoặc `version`. Chuẩn bị ít nhất hai giá trị hoặc phạm vi có thể phân biệt trong corpus; không tạo giá trị giả để filter đạt điểm. Bốn câu có filter, trong đó ít nhất một câu thuộc test. Giá trị filter là input được cung cấp từ câu hỏi hoặc ngữ cảnh **trước khi truy xuất**, không lấy từ gold để đưa cho hệ thống. Nếu một câu không có filter, chạy C không filter cho câu đó và ghi rõ.
+## Bộ câu hỏi và gold
 
-## Gold và kiểm chứng
+Tự xây **ít nhất 20 câu** từ corpus, chia trước tối thiểu **15 dev / 5 test**. Nên có câu hỏi trực tiếp, diễn đạt lại, điều kiện/ngoại lệ và câu cần phân biệt bằng metadata, tùy dữ liệu. Đây là **gợi ý để phủ các lỗi**, không bắt buộc một tỷ lệ số câu cố định. Chọn và ghi cách phân chia trước khi thử nghiệm; có ít nhất **3 câu có filter**, trong đó ít nhất **1 câu test**, để kiểm tra metadata filter. Không điều chỉnh chiến lược dựa vào test; nếu đã xem test để sửa bài, ghi rõ và tạo tập test mới nếu có thể.
 
-Mỗi câu ghi: `id`, `type`, `split`, `question`, `expected_answer`, `gold_source_id`, `gold_page`, `evidence_quote` và `filter` nếu dùng. Trường `gold_page` là vị trí truy vết: số trang PDF hoặc ID đơn vị đã định nghĩa đối với tài liệu không có trang.
+Mỗi câu ghi: `id`, `split`, `question`, `expected_answer`, `gold_source_id`, `gold_page`, `evidence_quote` và `filter` nếu dùng. Có thể thêm nhãn loại câu để phân tích lỗi. `gold_page` là số trang PDF hoặc ID đơn vị truy vết tương đương.
 
-Trước khi chạy, kiểm tra:
+Trước khi chạy, kiểm chứng evidence tồn tại ở nguồn và đủ hỗ trợ đáp án, kể cả điều kiện/ngoại lệ. Nếu nhiều nguồn hoặc trang hợp lệ, ghi tất cả và chấp nhận một trong số đó. Không đưa đáp án hoặc gold source vào query/filter; giá trị filter phải được người dùng hoặc ngữ cảnh cung cấp **trước khi truy xuất**. Với câu không có filter, cấu hình C chạy không filter cho câu đó và ghi rõ. Không dùng câu không có đáp án trong nguồn cho chỉ số bắt buộc.
 
-- Đoạn evidence tồn tại ở nguồn/trang và **đủ** để hỗ trợ đáp án, kể cả điều kiện/ngoại lệ.
-- Câu có thể trả lời từ corpus; không cần kiến thức bên ngoài. Không đưa đáp án hoặc gold source vào query/filter.
-- Nếu có nhiều bằng chứng hợp lệ, ghi tất cả nguồn/trang/đoạn và chấp nhận một trong số đó khi chấm. Khi evidence trải nhiều chunk, ghi rõ cách đánh giá; chỉ số chính vẫn theo định nghĩa [GUIDE.md](GUIDE.md).
-- Nêu cách tự kiểm tra evidence, người gán nhãn, các câu khó/nhãn chưa chắc và nguồn có thể hạn chế tái phân phối.
-
-Xem [data/format-example.json](data/format-example.json) để tham khảo cấu trúc đơn giản; file đó chỉ minh họa định dạng, không phải benchmark hoàn chỉnh. Phương pháp đo **retrieval, coherence, metadata, grounding và tác động chiến lược** được quy định ở [GUIDE.md](GUIDE.md). Rubric chấm bài 100 điểm nằm ở [RUBRIC.md](RUBRIC.md).
+Filter cần dựa vào metadata đáng tin, ví dụ `year`, `section`, `category`, `audience`, `language` hoặc `version`. Chọn corpus có ít nhất hai phạm vi phân biệt được; không tạo giá trị giả để filter đạt điểm. Xem [data/format-example.json](data/format-example.json) để tham khảo cấu trúc, không phải benchmark hoàn chỉnh.

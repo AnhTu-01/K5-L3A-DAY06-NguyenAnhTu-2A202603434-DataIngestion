@@ -8,7 +8,7 @@
 
 ## Cấu hình và benchmark
 - A / B / C (tham số cụ thể, khác biệt duy nhất B–C):
-- ≥20 câu theo ma trận: số câu từng loại, phân chia ≥15 dev / ≥5 test và cách kiểm chứng evidence:
+- ≥20 câu: phân chia ≥15 dev / ≥5 test, câu metadata filter và cách kiểm chứng evidence:
 - Tiêu chí chọn chiến lược đã chốt trước khi xem test:
 
 ## Kết quả

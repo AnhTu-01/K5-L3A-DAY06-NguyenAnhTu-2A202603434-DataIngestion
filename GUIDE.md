@@ -10,7 +10,7 @@ Manifest tối thiểu: `source_id`, `title`, `source_path_or_url`, `license_or_
 
 ## 2. Chốt benchmark (0:25–1:00)
 
-Viết ít nhất **20 câu hỏi trước khi chạy thử**, theo ma trận và schema trong [BENCHMARK.md](BENCHMARK.md): 6 trực tiếp, 5 paraphrase, 5 điều kiện/ngoại lệ và 4 câu kiểm tra metadata. Mỗi loại có mặt trong cả hai tập; tối thiểu 15 dev / 5 test. Chia theo tài liệu/chủ đề khi khả thi và ghi nguy cơ rò rỉ. Mỗi câu cần đáp án, nguồn/trang và evidence được kiểm chứng; filter do câu hỏi hoặc ngữ cảnh cung cấp trước khi truy xuất. Không dùng câu không có đáp án trong nguồn cho chỉ số bắt buộc.
+Viết ít nhất **20 câu hỏi trước khi chạy thử**, theo hướng dẫn trong [BENCHMARK.md](BENCHMARK.md); tối thiểu 15 dev / 5 test. Nên có câu trực tiếp, diễn đạt lại và câu có điều kiện/ngoại lệ; có ít nhất 3 câu kiểm tra metadata filter, trong đó ít nhất 1 câu thuộc test. Chia theo tài liệu/chủ đề khi khả thi và ghi nguy cơ rò rỉ. Mỗi câu cần đáp án, nguồn/trang và evidence được kiểm chứng; filter do câu hỏi hoặc ngữ cảnh cung cấp trước khi truy xuất. Không dùng câu không có đáp án trong nguồn cho chỉ số bắt buộc.
 
 Kiểm chứng từng đoạn evidence thực sự nằm ở trang nguồn sau chuẩn hóa. Giữ tập và nhãn giống nhau giữa mọi chiến lược. Chuẩn bị thêm các câu hỏi nếu test khó đại diện; không thay đổi bộ test sau khi xem kết quả. Với nhiều nguồn bằng chứng hợp lệ, ghi tất cả và chấp nhận bất kỳ nguồn hợp lệ nào; không coi một câu trả lời đúng là sai chỉ vì trích nguồn hợp lệ khác.
 
