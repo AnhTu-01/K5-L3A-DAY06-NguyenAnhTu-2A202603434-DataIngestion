@@ -9,7 +9,7 @@ Fork repo đề bài hoặc clone rồi đẩy lên repo cá nhân. Đặt tên 
 ```text
 STUDENT.md
 README.md                         # cách setup, chạy, đường dẫn dữ liệu
-src/                              # code pipeline do học viên viết
+src/ hoặc starter/src/             # code pipeline do học viên viết
 data/manifest.*                   # nguồn, trang, quyền, cách lấy
 benchmark/                        # câu hỏi, split, gold evidence
 artifacts/experiment_log.csv      # cấu hình và giả thuyết A/B/C
@@ -17,7 +17,7 @@ results/                          # thống kê, trace, nhãn audit, log
 report/individual/<MSSV>_<HoTen>.md
 ```
 
-Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md). Những thư mục `src/`, `benchmark/` và dữ liệu thật do học viên tạo. Nếu không được phép nộp dữ liệu gốc hoặc trace chứa nội dung bị hạn chế, cung cấp hướng dẫn truy cập/tái tạo và minh chứng được phép chia sẻ; báo cho người chấm biết cách xác minh.
+Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md). `src/` có thể đặt ở root hoặc `starter/src/`; benchmark và dữ liệu thật do học viên tạo. Nếu không được phép nộp dữ liệu gốc hoặc trace chứa nội dung bị hạn chế, cung cấp hướng dẫn truy cập/tái tạo và minh chứng được phép chia sẻ; báo cho người chấm biết cách xác minh.
 
 ## Checklist
 

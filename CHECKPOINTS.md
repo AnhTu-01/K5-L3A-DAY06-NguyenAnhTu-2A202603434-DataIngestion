@@ -4,7 +4,7 @@ Bài **cá nhân**, thời lượng dự kiến 240 phút. Các mốc tính từ
 
 | Mốc | Mục tiêu | Minh chứng / tự kiểm tra |
 |---|---|---|
-| 0:25 | Chọn dữ liệu và setup | Ghi nguồn/quyền, số trang nội dung và quy tắc tính trang; công cụ đọc hoạt động. |
+| 0:25 | Chọn dữ liệu và setup | Ghi nguồn/quyền, số trang nội dung và quy tắc tính trang; công cụ đọc hoạt động. Có thể dùng [starter](starter/README.md) để kiểm tra pgvector. |
 | 1:00 | Xây benchmark | ≥20 câu có trang và evidence; tách 15 dev / 5 test, xác minh evidence trước khi chạy thử. |
 | 1:50 | Đọc, chuẩn hóa và thử chunk | Có log trang lỗi/rỗng, metadata truy nguồn; xuất được hai cấu hình chunk. |
 | 2:00 | Nghỉ | |

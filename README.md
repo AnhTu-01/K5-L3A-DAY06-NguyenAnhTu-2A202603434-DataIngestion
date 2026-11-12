@@ -8,6 +8,10 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
+## Bắt đầu nhanh
+
+Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+
 ## 1. Xây pipeline
 
 ![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
@@ -32,6 +36,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 
 | Bạn cần tìm | Tài liệu |
 |---|---|
+| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
 | Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
 | Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
