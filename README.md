@@ -6,19 +6,19 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 | 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
 |---|---|---|
-| Tối thiểu **20 trang** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
 ## 1. Xây pipeline
 
 ![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
 
-Chọn tài liệu được phép sử dụng và giữ **nguồn, trang** trong metadata để kiểm chứng. Có thể dùng embedding thật hoặc TF-IDF + cosine làm baseline; API key không bắt buộc.
+Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
 
 ## 2. So sánh và đánh giá
 
 ![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
 
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn.
+Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; phân bổ các loại câu theo [BENCHMARK.md](BENCHMARK.md).
 
 Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
 
@@ -34,6 +34,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 |---|---|
 | Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
 | Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
+| Thiết kế 20 câu hỏi và gold | [BENCHMARK.md](BENCHMARK.md) |
 | Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
 | Khung pseudocode | [PSEUDOCODE.md](PSEUDOCODE.md) |
 | Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |

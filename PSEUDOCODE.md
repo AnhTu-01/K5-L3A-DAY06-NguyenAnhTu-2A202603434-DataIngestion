@@ -1,7 +1,7 @@
 # Pseudocode — tự hiện thực
 
 ```text
-load_manifest(); assert page_count >= 20
+load_manifest(); assert content_page_count >= 30
 for page in sources:
     raw = read(page)                         # theo định dạng, giữ page_id
     clean = normalize_unicode_and_whitespace(raw)
@@ -17,13 +17,13 @@ for config in [fixed, sections, sections_plus_filter]:
         chunks = split(page.text, config.chunking)
         for chunk in chunks:
             chunk.id = stable_hash(page.id, config, position, chunk.text)
-            chunk.metadata = verified_source_and_page_metadata(page)
-    vectors = same_vectorizer_for_this_experiment.fit_transform(chunks)
+            chunk.metadata = verified_document_source_page_and_filter_metadata(page)
+    vectors = same_embedding_model.encode_documents(chunks)
     upsert_or_replace_index(config.id, chunks, vectors)
     verify_reingest_is_idempotent()
     for question in benchmark:
         filter = question.filter if config.uses_filter else none
-        top3 = index.search(vectorize(question.text), filter, limit=3)
+        top3 = index.search(same_embedding_model.encode_query(question.text), filter, limit=3)
         save_full_trace(question, config, top3)
     calculate_hit_at_1_and_3_by_split()
     record_chunk_counts_time_cost()

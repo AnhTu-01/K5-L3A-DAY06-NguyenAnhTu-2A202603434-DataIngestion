@@ -21,8 +21,9 @@ Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.
 
 ## Checklist
 
-- [ ] Dữ liệu ≥20 trang hợp lệ, manifest ghi nguồn, quyền, số trang và quy tắc tính.
-- [ ] ≥20 câu có evidence đã kiểm chứng, tách 15 dev / 5 test trước thử nghiệm.
+- [ ] Dữ liệu ≥30 trang nội dung hợp lệ, manifest ghi nguồn, quyền, số trang và quy tắc tính.
+- [ ] ≥20 câu theo ma trận [BENCHMARK.md](BENCHMARK.md), có evidence đã kiểm chứng và tách tối thiểu 15 dev / 5 test trước thử nghiệm.
+- [ ] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình.
 - [ ] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark.
 - [ ] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian.
 - [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn.

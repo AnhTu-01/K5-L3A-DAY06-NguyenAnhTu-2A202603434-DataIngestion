@@ -3,11 +3,12 @@
 ## Dữ liệu và pipeline
 - Chủ đề, nguồn/quyền, số trang và quy tắc tính trang:
 - Chuẩn hóa, lỗi và giới hạn:
-- Vectorizer, version, storage, lệnh chạy, chi phí:
+- Embedding model/provider/version/số chiều, vector store/version, metric, lệnh chạy và chi phí:
+- Metadata bắt buộc, trường lọc bổ sung, nguồn giá trị và lý do chọn:
 
 ## Cấu hình và benchmark
 - A / B / C (tham số cụ thể, khác biệt duy nhất B–C):
-- 20 câu: 15 dev / 5 test; cách chia và kiểm chứng evidence:
+- ≥20 câu theo ma trận: số câu từng loại, phân chia ≥15 dev / ≥5 test và cách kiểm chứng evidence:
 - Tiêu chí chọn chiến lược đã chốt trước khi xem test:
 
 ## Kết quả

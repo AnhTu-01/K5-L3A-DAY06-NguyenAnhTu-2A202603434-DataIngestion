@@ -12,4 +12,4 @@ Bài **cá nhân**, thời lượng dự kiến 240 phút. Các mốc tính từ
 | 3:30 | Benchmark và audit | Có trace, Hit@1/Hit@3 dev/test và mẫu chấm coherence, metadata, grounding. |
 | 4:00 | Báo cáo và nộp | Có bảng so sánh, ví dụ lỗi, kết luận và các file theo [SUBMISSION.md](SUBMISSION.md). |
 
-Chi tiết và tiêu chí tính xem [GUIDE.md](GUIDE.md). Nếu thiết lập chậm, dùng TF-IDF + cosine làm vector baseline không cần API; ghi giới hạn và không gọi đây là semantic embedding.
+Chi tiết và tiêu chí tính xem [GUIDE.md](GUIDE.md). Nếu thiết lập chậm, dùng một embedding model local cùng Chroma hoặc Qdrant local; chuẩn bị model, thư viện và dữ liệu trước buổi học.
