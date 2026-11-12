@@ -41,7 +41,6 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
 | Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
 | Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
-| Khung pseudocode | [PSEUDOCODE.md](PSEUDOCODE.md) |
 | Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
