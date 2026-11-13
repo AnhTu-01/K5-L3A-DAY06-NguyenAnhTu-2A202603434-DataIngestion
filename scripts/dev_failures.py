@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 def load(s):
-    return [json.loads(l) for l in open(f"../results/traces_{s}.jsonl", encoding="utf-8")]
+    return [json.loads(l) for l in open(f"results/traces_{s}.jsonl", encoding="utf-8")]
 
 tr = {s: {t["id"]: t for t in load(s) if t["split"] == "dev"} for s in "ABC"}
 for s in "ABC":
