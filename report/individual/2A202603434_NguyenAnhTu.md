@@ -1,6 +1,6 @@
 # Báo cáo cá nhân — Day 6: Data Ingestion Engineering
 
-Nguyễn Anh Tú · MSSV 2A202603434 · Lớp L3A · Repo: https://github.com/AnhTu-01/K5-L3A-DAY06-2A202603434-DataIngestion
+Nguyễn Anh Tú · MSSV 2A202603434 · Lớp L3A · Repo: https://github.com/AnhTu-01/K5-L3A-DAY06-NguyenAnhTu-2A202603434-DataIngestion
 
 ## Dữ liệu và pipeline
 
