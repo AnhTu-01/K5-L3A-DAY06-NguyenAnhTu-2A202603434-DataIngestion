@@ -1,0 +1,31 @@
+pos_id,page,char_pos,strategy,chunk_id,score_0_2,reason,rater
+1,250,1172,A,openstax-intro-cs:p250:fixed:002,1,"mo dau giua cau thieu chu the (macOS), cuoi cut 'ne'",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+1,250,1172,B,openstax-intro-cs:p250:para:002,2,"cau tron ven, co chu the",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+1,250,1172,C,openstax-intro-cs:p250:para:002,2,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+2,265,525,A,openstax-intro-cs:p265:fixed:001,1,"cat giua tu, chua neu chu the (microkernel), cuoi cut 'mo'",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+2,265,525,B,openstax-intro-cs:p265:para:001,1,"bat dau bang 'Also,' tiep noi y truoc, thieu chu the",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+2,265,525,C,openstax-intro-cs:p265:para:001,1,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+3,280,951,A,openstax-intro-cs:p280:fixed:002,1,"dau la man cau cu, cuoi cut giua cau",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+3,280,951,B,openstax-intro-cs:p280:para:003,2,"hai cach cap phat bo nho, du y",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+3,280,951,C,openstax-intro-cs:p280:para:003,2,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+4,308,999,A,openstax-intro-cs:p308:fixed:002,1,"bat dau 'h-level', cuoi cut chu 'J'",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+4,308,999,B,openstax-intro-cs:p308:para:003,1,'It' chua ro chi gi,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+4,308,999,C,openstax-intro-cs:p308:para:003,1,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+5,323,1476,A,openstax-intro-cs:p323:fixed:003,1,dau va cuoi cut,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+5,323,1476,B,openstax-intro-cs:p323:para:003,2,dinh nghia array tu hieu duoc,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+5,323,1476,C,openstax-intro-cs:p323:para:003,2,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+6,338,1205,A,openstax-intro-cs:p338:fixed:002,1,"dau va cuoi cut, lan chu thich hinh",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+6,338,1205,B,openstax-intro-cs:p338:para:002,1,"chu thich hinh lan vao, y 'In this implementation' bo do",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+6,338,1205,C,openstax-intro-cs:p338:para:002,1,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+7,353,1888,A,openstax-intro-cs:p353:fixed:004,1,"dau va cuoi cut, tron hai chu de (interpreter va linking)",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+7,353,1888,B,openstax-intro-cs:p353:para:004,1,'It also isolates...' chua ro 'It' la gi,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+7,353,1888,C,openstax-intro-cs:p353:para:004,1,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+8,382,2144,A,openstax-intro-cs:p382:fixed:004,1,"danh sach muc tieu tron voi dinh nghia RDBMS, cuoi cut",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+8,382,2144,B,openstax-intro-cs:p382:para:005,1,mo dau bang man bullet 'components of...' roi moi den dinh nghia,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+8,382,2144,C,openstax-intro-cs:p382:para:005,1,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+9,397,1869,A,openstax-intro-cs:p397:fixed:004,1,"tron hai chu de (transaction va concurrency), cuoi cut",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+9,397,1869,B,openstax-intro-cs:p397:para:004,2,mot cau tron y ve transaction management,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+9,397,1869,C,openstax-intro-cs:p397:para:004,2,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+10,412,1888,A,openstax-intro-cs:p412:fixed:004,1,"lan cuoi muc truoc voi danh sach muc tieu, cuoi cut",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+10,412,1888,B,openstax-intro-cs:p412:para:005,2,danh sach muc tieu nguyen ven (tron nhung it noi dung),Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+10,412,1888,C,openstax-intro-cs:p412:para:005,2,dung chung chunk voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA

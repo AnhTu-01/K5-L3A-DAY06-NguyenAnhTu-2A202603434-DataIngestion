@@ -1,0 +1,142 @@
+[
+ {
+  "pos_id": 1,
+  "page": 250,
+  "char_pos": 1172,
+  "section": "6.1 What Is an Operating System?",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p250:fixed:002",
+   "text": "is the driving force behind Apple computers, ensures tight hardware- software cohesion. Linux, a freely available open-source OS, is acclaimed for its reliability, safety, and adaptability. Linux source code has over 27 million lines of C, while Windows has over 50 million lines. Linux offers a variety of versions or distributions, such as Ubuntu for ease of use, Fedora for the latest features, Debian for stability, and Kali Linux for security tasks. Each version is designed to meet specific ne"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p250:para:002",
+   "text": "Apple Inc.’s macOS, which is the driving force behind Apple computers, ensures tight hardware- software cohesion. Linux, a freely available open-source OS, is acclaimed for its reliability, safety, and adaptability. Linux source code has over 27 million lines of C, while Windows has over 50 million lines. Linux offers a variety of versions or distributions, such as Ubuntu for ease of use, Fedora for the latest features, Debian for stability, and Kali Linux for security tasks."
+  }
+ },
+ {
+  "pos_id": 2,
+  "page": 265,
+  "char_pos": 525,
+  "section": "6.2 Fundamental OS Concepts",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p265:fixed:001",
+   "text": "ents. Also, there is less code running at full privilege, and greater ease of extension and customization. However, performance is generally poor due to user and kernel boundary crossings, which represent a security risk when the kernel code operates on the data. The first microkernel system was Hydra (CMU, 1970), followed by Mach (CMU), Chorus (French UNIX-like OS), and OS X (Apple). Windows OS used to use a microkernel, but now uses a hybrid kernel architecture that combines the benefits of mo"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p265:para:001",
+   "text": "Also, there is less code running at full privilege, and greater ease of extension and customization. However, performance is generally poor due to user and kernel boundary crossings, which represent a security risk when the kernel code operates on the data. The first microkernel system was Hydra (CMU, 1970), followed by Mach (CMU), Chorus (French UNIX-like OS), and OS X (Apple)."
+  }
+ },
+ {
+  "pos_id": 3,
+  "page": 280,
+  "char_pos": 951,
+  "section": "6.4 Memory Management",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p280:fixed:002",
+   "text": "previously allocated block. There are two general approaches to applying these dynamic storage allocation operations: (1) stack allocation, which is hierarchical and restricted, but simple and efficient; and (2) heap allocation, which is more general but more difficult to implement and less efficient. The linear data structure that follows a LIFO order (last in, first out), as in the stack data figure configuration in Figure 6.29, is called stack allocation. In the stack approach, the memory is"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p280:para:003",
+   "text": "There are two general approaches to applying these dynamic storage allocation operations: (1) stack allocation, which is hierarchical and restricted, but simple and efficient; and (2) heap allocation, which is more general but more difficult to implement and less efficient. The linear data structure that follows a LIFO order (last in, first out), as in the stack data figure configuration in Figure 6.29, is called stack allocation."
+  }
+ },
+ {
+  "pos_id": 4,
+  "page": 308,
+  "char_pos": 999,
+  "section": "7.1 Programming Language Foundations",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p308:fixed:002",
+   "text": "h-level programming language is designed to be easy for humans to read, write, and understand. It abstracts away most of the complexities of the underlying hardware and machine code, allowing programmers to focus on solving problems and designing software without needing to manage the low-level details of the computer’s architecture. What Are HLLs? High-level programming languages give humans the ability to direct computers to perform tasks and applications. There are many HLLs to choose from. J"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p308:para:003",
+   "text": "It abstracts away most of the complexities of the underlying hardware and machine code, allowing programmers to focus on solving problems and designing software without needing to manage the low-level details of the computer’s architecture. What Are HLLs? High-level programming languages give humans the ability to direct computers to perform tasks and applications. There are many HLLs to choose from."
+  }
+ },
+ {
+  "pos_id": 5,
+  "page": 323,
+  "char_pos": 1476,
+  "section": "7.2 Programming Language Constructs",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p323:fixed:003",
+   "text": "t is meant to contain books (a book would be another composite type). An array is a named variable that references a block of contiguous memory locations, and each “shelf” of the array is an element, which occupies exactly as many of the contiguous bytes as it takes to accommodate a value of the data type being stored. In the simplest type of array structure, an indexed array, the shelves are numbered with an index, starting at zero, or the lowest memory location. In a strongly typed language, a"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p323:para:003",
+   "text": "An instance of an array in this case could be a bookshelf that is meant to contain books (a book would be another composite type). An array is a named variable that references a block of contiguous memory locations, and each “shelf” of the array is an element, which occupies exactly as many of the contiguous bytes as it takes to accommodate a value of the data type being stored."
+  }
+ },
+ {
+  "pos_id": 6,
+  "page": 338,
+  "char_pos": 1205,
+  "section": "7.2 Programming Language Constructs",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p338:fixed:002",
+   "text": "hen it finishes executing, it is popped off. The flow of control of the program follows the current state of the call stack. A call stack is outlined in Figure 7.17. Figure 7.17 This is representative of a call stack. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license) In this implementation, function1 is called first. It is pushed onto the stack in stack frame format and the parameters with their values are pushed first followed by the return address so that the fl"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p338:para:002",
+   "text": "The flow of control of the program follows the current state of the call stack. A call stack is outlined in Figure 7.17. Figure 7.17 This is representative of a call stack. (attribution: Copyright Rice University, OpenStax, under CC BY NC-SA 4.0 license) In this implementation, function1 is called first."
+  }
+ },
+ {
+  "pos_id": 7,
+  "page": 353,
+  "char_pos": 1888,
+  "section": "7.4 Programming Language Implementation",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p353:fixed:004",
+   "text": "instructions (microcode or firmware). These items are housed in read-only memory and executed by the hardware. Linking Language implementations that are intended for the construction of large programs support separate compilation where pieces of the program can be compiled and built independently. Once compilation is complete, these pieces called compilation units are rejoined by a linker. An important function of the linker is to join modules of precompiled libraries of subroutines, such as th"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p353:para:004",
+   "text": "It also isolates the compiler from changes needed in the format of machine language files; for example, when computer chips change, only the assembler must be changed. A computer’s hardware does not implement the assembly-level instruction set; it is run by the interpreter. The interpreter is written in low-level instructions (microcode or firmware). These items are housed in read-only memory and executed by the hardware."
+  }
+ },
+ {
+  "pos_id": 8,
+  "page": 382,
+  "char_pos": 2144,
+  "section": "8.3 Relational Database Management Systems",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p382:fixed:004",
+   "text": "ow to create a physical relational database design • Discuss application programming interfaces and techniques used to program relational database applications • Identify the various components of a relational database management system A relational database management system (RDBMS) is one type of DBMS that stores related data elements in a row-based table structure. An RDBMS transaction is a single logical unit of work that accesses and possibly modifies the contents of a database using read-a"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p382:para:005",
+   "text": "components of a relational database management system A relational database management system (RDBMS) is one type of DBMS that stores related data elements in a row-based table structure."
+  }
+ },
+ {
+  "pos_id": 9,
+  "page": 397,
+  "char_pos": 1869,
+  "section": "8.3 Relational Database Management Systems",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p397:fixed:004",
+   "text": "register the current state of the transaction (active, committed, or aborted) and facilitate the implementation of checkpoint for rollback purposes. Concurrency Control The coordination of transactions that execute simultaneously on the same data so that they do not cause inconsistencies because of mutual interference is called concurrency control. A lock manager provides concurrency control, which ensures data integrity at all times. The two types of locks are read locks and write locks. The lo"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p397:para:004",
+   "text": "Various components are involved in transaction management (i.e., scheduler, recovery manager, stored data manager, and buffer manager), and RDBMSs use a log file to register the current state of the transaction (active, committed, or aborted) and facilitate the implementation of checkpoint for rollback purposes."
+  }
+ },
+ {
+  "pos_id": 10,
+  "page": 412,
+  "char_pos": 1888,
+  "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+  "A": {
+   "chunk_id": "openstax-intro-cs:p412:fixed:004",
+   "text": "be hidden in a traditional two-dimensional view of the data. 8.6 Data Management for Shallow and Deep Learning Applications Learning Objectives By the end of this section, you will be able to: • Define big data and explain its related functionality • Discuss big data analytics and its impact on computer systems • Identify and describe the tools that are used to perform shallow machine learning • Describe cognitive analytics and artificial intelligence • Identify the tools that are used to perfo"
+  },
+  "B": {
+   "chunk_id": "openstax-intro-cs:p412:para:005",
+   "text": "8.6 Data Management for Shallow and Deep Learning Applications Learning Objectives By the end of this section, you will be able to: • Define big data and explain its related functionality • Discuss big data analytics and its impact on computer systems • Identify and describe the tools that are used to perform shallow machine learning • Describe cognitive analytics and artificial intelligence • Identify the tools that are used to perform deep learning • Explain massively parallel processing"
+  }
+ }
+]
