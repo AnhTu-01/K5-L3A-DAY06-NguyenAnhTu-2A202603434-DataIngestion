@@ -1,0 +1,16 @@
+strategy,question,score_0_2,reason,rater
+A,q04,2,"chunk hang 1 chua tron cau ve stack pointer, truy duoc p268",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+A,q09,2,"chunk hang 1 chua tron dong 'Copy: ...', truy duoc p286",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+A,q13,0,top-3 khong co cau khuyen nghi 'initialize'; cau bi cat sang cua so ke tiep; hang 2 la 'best practice' khac (dat ten bien),Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+A,q16,2,"chunk hang 1 chua tron cau 'code generation', truy duoc p352",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+A,q20,2,"chunk hang 1 chua tron dinh nghia Select, truy duoc p385 muc 8.3",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+B,q04,2,"chunk hang 1 chua tron cau ve stack pointer, truy duoc p268",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+B,q09,2,"chunk hang 1 chua tron dong 'Copy: ...', truy duoc p286",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+B,q13,2,chunk hang 1 chua day du cau khuyen nghi khoi tao bien,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+B,q16,2,"chunk hang 1 chua tron cau 'code generation', truy duoc p352",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+B,q20,2,"chunk hang 1 chua tron dinh nghia Select, truy duoc p385 muc 8.3",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+C,q04,2,"chunk hang 1 chua tron cau ve stack pointer, truy duoc p268 | C dung chung top-3 voi B",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+C,q09,2,"chunk hang 1 chua tron dong 'Copy: ...', truy duoc p286 | C dung chung top-3 voi B",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+C,q13,2,chunk hang 1 chua day du cau khuyen nghi khoi tao bien | C dung chung top-3 voi B,Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+C,q16,2,"chunk hang 1 chua tron cau 'code generation', truy duoc p352 | C dung chung top-3 voi B",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA
+C,q20,2,"chunk hang 1 chua tron dinh nghia Select, truy duoc p385 muc 8.3 | C dung chung top-3 voi B",Claude Sonnet 5.5 (nhan khoi tao); tac gia xem xet va xac nhan: CHUA

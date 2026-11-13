@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"chapter,section,page (khong loc)",khong,"openai/text-embedding-3-small (OpenRouter, 1536 chieu)","Baseline: cua so co dinh se cat ngang y, nen Evidence Hit@3 thap hon B",8/17,11/17,4/6,4/6,"976 chunk; nap+embed 56.67s; chi phi $0.001794; gia thuyet ghi vao log sau khi chay, dua tren thiet ke ban dau; mau nho (17 dev/6 test)"
+B,"sentence_pack<=500, gop manh<80",500,0,"chapter,section,page (khong loc)",khong,"openai/text-embedding-3-small (OpenRouter, 1536 chieu)",Chia theo cau giu tron y hon A (thay 1 yeu to: chunking) nen Hit@3 va coherence cao hon,11/17,13/17,6/6,6/6,"1045 chunk; nap+embed 58.32s; chi phi $0.001615; gia thuyet ghi vao log sau khi chay, dua tren thiet ke ban dau; mau nho (17 dev/6 test)"
+C,nhu B (dung chung chunk),500,0,"chapter,section,page",chapter/section khi cau hoi co filter,"openai/text-embedding-3-small (OpenRouter, 1536 chieu)",Loc metadata khi co pham vi giup tranh trang lech chuong (thay 1 yeu to so voi B),11/17,13/17,6/6,6/6,"1045 chunk; nap+embed 58.32s; chi phi $0.001615; gia thuyet ghi vao log sau khi chay, dua tren thiet ke ban dau; mau nho (17 dev/6 test)"
