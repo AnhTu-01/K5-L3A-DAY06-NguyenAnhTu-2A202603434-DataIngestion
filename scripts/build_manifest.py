@@ -69,6 +69,3 @@ print('trang tinh:', len(pages), '| tong ky tu:', total, '| so muc:', len({x['se
 for ch in CHAPTERS:
     secs = sorted({x['section'] for x in pages if x['chapter'] == ch})
     print(f'ch{ch}:', secs)
-for p in (356, 389):
-    rec = next(x for x in pages if x['page'] == p)
-    print(f"trang {p} ({rec['chars']} ky tu), section {rec['section']}")
