@@ -1,0 +1,20 @@
+{
+ "run_at": "2026-11-13T17:35:21.902741+07:00",
+ "python": "3.13.0",
+ "psycopg": "3.3.8",
+ "postgres": "PostgreSQL 16.16 (Debian 16.16-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+ "pgvector": "0.8.7",
+ "embedding_provider": "OpenRouter",
+ "embedding_model": "openai/text-embedding-3-small",
+ "dimensions": 1536,
+ "query_vs_document": "cung model, khong prefix",
+ "search": "exact cosine (<=>), khong ANN index",
+ "embedding_api_calls": 57,
+ "embedding_tokens_total": 170715,
+ "embedding_cost_usd_total": 0.0034143,
+ "configs": {
+  "A": "fixed 500/overlap 50, khong filter",
+  "B": "gom theo cau <=500 (gop manh <80), khong filter",
+  "C": "chunk cua B + loc metadata khi cau hoi co filter"
+ }
+}

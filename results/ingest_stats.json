@@ -1,0 +1,28 @@
+{
+ "A": {
+  "chunks": 976,
+  "chars_total": 453136,
+  "len_mean": 464.3,
+  "len_median": 500.0,
+  "len_min": 53,
+  "len_max": 500,
+  "chunk_seconds": 0.004,
+  "embed_store_seconds": 56.67,
+  "embed_tokens": 89690,
+  "embed_cost_usd": 0.0017938000000000001,
+  "rows_in_db": 976
+ },
+ "B": {
+  "chunks": 1045,
+  "chars_total": 411052,
+  "len_mean": 393.4,
+  "len_median": 417,
+  "len_min": 81,
+  "len_max": 572,
+  "chunk_seconds": 0.018,
+  "embed_store_seconds": 58.32,
+  "embed_tokens": 80753,
+  "embed_cost_usd": 0.0016150599999999998,
+  "rows_in_db": 1045
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "A": {
+  "dev": {
+   "n": 17,
+   "hit1": 8,
+   "hit3": 11,
+   "page_hit1": 11,
+   "page_hit3": 15,
+   "filter_questions": 2,
+   "filter_compliant": 2
+  },
+  "test": {
+   "n": 6,
+   "hit1": 4,
+   "hit3": 4,
+   "page_hit1": 6,
+   "page_hit3": 6,
+   "filter_questions": 1,
+   "filter_compliant": 1
+  }
+ },
+ "B": {
+  "dev": {
+   "n": 17,
+   "hit1": 11,
+   "hit3": 13,
+   "page_hit1": 12,
+   "page_hit3": 15,
+   "filter_questions": 2,
+   "filter_compliant": 2
+  },
+  "test": {
+   "n": 6,
+   "hit1": 6,
+   "hit3": 6,
+   "page_hit1": 6,
+   "page_hit3": 6,
+   "filter_questions": 1,
+   "filter_compliant": 1
+  }
+ },
+ "C": {
+  "dev": {
+   "n": 17,
+   "hit1": 11,
+   "hit3": 13,
+   "page_hit1": 12,
+   "page_hit3": 15,
+   "filter_questions": 2,
+   "filter_compliant": 2
+  },
+  "test": {
+   "n": 6,
+   "hit1": 6,
+   "hit3": 6,
+   "page_hit1": 6,
+   "page_hit3": 6,
+   "filter_questions": 1,
+   "filter_compliant": 1
+  }
+ }
+}
