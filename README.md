@@ -1,47 +1,43 @@
-# Day 06 · Data Ingestion Engineering
+# Day 06 — Data Ingestion Engineering (Nguyễn Anh Tú, 2A202603434, L3A)
 
-**Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
+Pipeline truy xuất trên **Introduction to Computer Science (OpenStax)**, chương 6–8, so sánh ba chiến lược dữ liệu (A: chunk cố định, B: chia theo câu, C: B + lọc metadata) trên 23 câu benchmark tự viết. Báo cáo: `report/individual/2A202603434_NguyenAnhTu.md`.
 
-Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.
+Nguồn dữ liệu: *Introduction to Computer Science*, OpenStax, Rice University, CC BY 4.0. **Access for free at openstax.org** (https://openstax.org/details/books/introduction-computer-science). Chỉ dùng phần văn bản; hình minh họa có giấy phép riêng và không nằm trong repo. `data/pages.jsonl` là văn bản trích từ sách, giữ lại để tái lập (nguồn và giấy phép trong `data/manifest.json`).
 
-| 📄 Dữ liệu | 🧩 Chiến lược | 🎯 Benchmark |
-|---|---|---|
-| Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
+## Cấu trúc
 
-## Bắt đầu nhanh
+```text
+data/manifest.json, data/pages.jsonl   # nguồn, quyền, trang, văn bản (data/raw/ không commit)
+benchmark/questions.json               # 23 câu (17 dev / 6 test), evidence đã kiểm chứng
+starter/src/                           # ingestion, chunking, embeddings, store, evaluation, run
+scripts/                               # build_manifest, verify_benchmark, audit, finalize_logs
+artifacts/                             # experiment_log.csv, selection_criteria.md
+results/                               # trace top-3, summary, audit, run_meta
+report/individual/                     # báo cáo cá nhân
+```
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+## Cài đặt và chạy (macOS/Linux)
 
-## 1. Xây pipeline
+Yêu cầu: Docker, Python 3.11–3.14, khóa OpenRouter. Trên macOS, Docker Desktop cần quyền đọc thư mục chứa repo (System Settings → Privacy & Security → Files and Folders / Full Disk Access).
 
-![Đọc tài liệu, chuẩn hóa, chia chunk, tạo vector, lưu và kiểm tra](assets/ingestion-pipeline.svg)
+```bash
+cd starter
+python3 -m venv .venv && source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env     # điền OPENROUTER_API_KEY; đặt EMBEDDING_MODEL=openai/text-embedding-3-small
+docker compose up -d --wait
+python scripts/check_setup.py
+cd ..
+# (tùy chọn) dựng lại corpus: tải PDF từ trang OpenStax ở trên, đặt vào data/raw/openstax_intro_cs.pdf rồi
+python scripts/build_manifest.py
+python scripts/verify_benchmark.py
+cd starter && python -m src.run              # nạp A, B; chạy A/B/C; in kết quả dev
+python -m src.run --show-test                # in kết quả test đã lưu
+cd .. && python scripts/finalize_logs.py     # audit grounding/metadata và experiment_log
+```
 
-Chọn tài liệu được phép sử dụng; giữ **ID tài liệu, nguồn, trang/vị trí** và metadata phù hợp. Dùng embedding model thật qua API hoặc chạy local; lưu và truy xuất bằng pgvector, Qdrant, Chroma hoặc một store tương đương.
+`.env` chứa khóa API và **không được commit**. Phiên bản chính xác của model, Postgres, pgvector và thư viện nằm trong `results/run_meta.json`.
 
-## 2. So sánh và đánh giá
+## Ghi chú trung thực
 
-![Ba chiến lược được đánh giá trên cùng corpus và benchmark dev/test](assets/benchmark-workflow.svg)
-
-Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **15 câu dev / 5 câu test** trước khi chạy; chọn cấu hình trên dev, rồi đánh giá test sau khi cố định. Mỗi câu hỏi cần có đoạn bằng chứng và trang nguồn; thiết kế bộ câu hỏi và đánh giá theo [BENCHMARK.md](BENCHMARK.md).
-
-Đánh giá theo năm khía cạnh: **độ chính xác truy xuất**, **tính mạch lạc của chunk**, **tính hữu dụng của metadata**, **chất lượng grounding** và **tác động của chiến lược dữ liệu**. Giải thích lựa chọn bằng kết quả, ví dụ lỗi và các đánh đổi.
-
-## 3. Chuẩn bị bài nộp
-
-1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
-3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
-
-## Tài liệu hướng dẫn
-
-| Bạn cần tìm | Tài liệu |
-|---|---|
-| Setup baseline PostgreSQL + pgvector | [starter/README.md](starter/README.md) |
-| Các bước làm và cách tính chỉ số | [GUIDE.md](GUIDE.md) |
-| Tiến độ trong 4 giờ | [CHECKPOINTS.md](CHECKPOINTS.md) |
-| Năm tiêu chí benchmark và bộ câu hỏi | [BENCHMARK.md](BENCHMARK.md) |
-| Tiêu chí chấm điểm | [RUBRIC.md](RUBRIC.md) |
-| Quy tắc sử dụng dữ liệu, AI và API | [RULES.md](RULES.md) |
-| Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
-
-[data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+Một số nhãn thủ công (coherence, grounding) do AI chấm khởi tạo rồi tác giả xem lại; xem phần "Cách tạo nhãn" trong báo cáo. Benchmark nhỏ (17 dev / 6 test), kết quả chỉ minh họa trên corpus này.
