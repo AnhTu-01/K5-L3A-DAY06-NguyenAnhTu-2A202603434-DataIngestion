@@ -1,0 +1,899 @@
+{
+ "sources": [
+  {
+   "source_id": "openstax-intro-cs",
+   "title": "Introduction to Computer Science (OpenStax), chapters 6-8",
+   "source_path_or_url": "https://openstax.org/details/books/introduction-computer-science (file: data/raw/openstax_intro_cs.pdf, khong commit)",
+   "license_or_permission": "CC BY 4.0 (OpenStax). Attribution: Access for free at openstax.org",
+   "accessed_at": "2026-11-13",
+   "physical_pdf_pages_total": 939,
+   "counting_rule": "Trang vat ly PDF (1-based). Tinh: ch6 p250-294, ch7 p308-355, ch8 p370-423 (tu muc x.1 den het muc cuoi). Loai: p356 (chi con 1 cau ket thuc muc), bia, muc luc, Preface, Chapter Outline/Introduction, Chapter Review, Index, Appendix.",
+   "counted_pages": 147,
+   "total_chars_normalized": 417330,
+   "pages": [
+    {
+     "page": 250,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 2437
+    },
+    {
+     "page": 251,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 3215
+    },
+    {
+     "page": 252,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 2553
+    },
+    {
+     "page": 253,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 4029
+    },
+    {
+     "page": 254,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 3229
+    },
+    {
+     "page": 255,
+     "chapter": 6,
+     "section": "6.1 What Is an Operating System?",
+     "chars": 3635
+    },
+    {
+     "page": 256,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2765
+    },
+    {
+     "page": 257,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 3302
+    },
+    {
+     "page": 258,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2823
+    },
+    {
+     "page": 259,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 3194
+    },
+    {
+     "page": 260,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2238
+    },
+    {
+     "page": 261,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 3654
+    },
+    {
+     "page": 262,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2522
+    },
+    {
+     "page": 263,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 3314
+    },
+    {
+     "page": 264,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2430
+    },
+    {
+     "page": 265,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 1050
+    },
+    {
+     "page": 266,
+     "chapter": 6,
+     "section": "6.2 Fundamental OS Concepts",
+     "chars": 2238
+    },
+    {
+     "page": 267,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3454
+    },
+    {
+     "page": 268,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3170
+    },
+    {
+     "page": 269,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 1737
+    },
+    {
+     "page": 270,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3477
+    },
+    {
+     "page": 271,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3079
+    },
+    {
+     "page": 272,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3271
+    },
+    {
+     "page": 273,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 3664
+    },
+    {
+     "page": 274,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 2423
+    },
+    {
+     "page": 275,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 2979
+    },
+    {
+     "page": 276,
+     "chapter": 6,
+     "section": "6.3 Processes and Concurrency",
+     "chars": 4077
+    },
+    {
+     "page": 277,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 3587
+    },
+    {
+     "page": 278,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 2816
+    },
+    {
+     "page": 279,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 2802
+    },
+    {
+     "page": 280,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 1994
+    },
+    {
+     "page": 281,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 3346
+    },
+    {
+     "page": 282,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 1880
+    },
+    {
+     "page": 283,
+     "chapter": 6,
+     "section": "6.4 Memory Management",
+     "chars": 2941
+    },
+    {
+     "page": 284,
+     "chapter": 6,
+     "section": "6.5 File Systems",
+     "chars": 3393
+    },
+    {
+     "page": 285,
+     "chapter": 6,
+     "section": "6.5 File Systems",
+     "chars": 3974
+    },
+    {
+     "page": 286,
+     "chapter": 6,
+     "section": "6.5 File Systems",
+     "chars": 3062
+    },
+    {
+     "page": 287,
+     "chapter": 6,
+     "section": "6.5 File Systems",
+     "chars": 2553
+    },
+    {
+     "page": 288,
+     "chapter": 6,
+     "section": "6.5 File Systems",
+     "chars": 3892
+    },
+    {
+     "page": 289,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 2938
+    },
+    {
+     "page": 290,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 4715
+    },
+    {
+     "page": 291,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 3667
+    },
+    {
+     "page": 292,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 3724
+    },
+    {
+     "page": 293,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 4097
+    },
+    {
+     "page": 294,
+     "chapter": 6,
+     "section": "6.6 Reliability and Security",
+     "chars": 1812
+    },
+    {
+     "page": 308,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2071
+    },
+    {
+     "page": 309,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 1727
+    },
+    {
+     "page": 310,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2588
+    },
+    {
+     "page": 311,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2224
+    },
+    {
+     "page": 312,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 1733
+    },
+    {
+     "page": 313,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2787
+    },
+    {
+     "page": 314,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2423
+    },
+    {
+     "page": 315,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2560
+    },
+    {
+     "page": 316,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 1338
+    },
+    {
+     "page": 317,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2907
+    },
+    {
+     "page": 318,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 3457
+    },
+    {
+     "page": 319,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2896
+    },
+    {
+     "page": 320,
+     "chapter": 7,
+     "section": "7.1 Programming Language Foundations",
+     "chars": 2606
+    },
+    {
+     "page": 321,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2511
+    },
+    {
+     "page": 322,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2433
+    },
+    {
+     "page": 323,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2953
+    },
+    {
+     "page": 324,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 3446
+    },
+    {
+     "page": 325,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 3020
+    },
+    {
+     "page": 326,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 3498
+    },
+    {
+     "page": 327,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2229
+    },
+    {
+     "page": 328,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1389
+    },
+    {
+     "page": 329,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2350
+    },
+    {
+     "page": 330,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2431
+    },
+    {
+     "page": 331,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1942
+    },
+    {
+     "page": 332,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1075
+    },
+    {
+     "page": 333,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2373
+    },
+    {
+     "page": 334,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1705
+    },
+    {
+     "page": 335,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1283
+    },
+    {
+     "page": 336,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 3301
+    },
+    {
+     "page": 337,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 3097
+    },
+    {
+     "page": 338,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2483
+    },
+    {
+     "page": 339,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 2199
+    },
+    {
+     "page": 340,
+     "chapter": 7,
+     "section": "7.2 Programming Language Constructs",
+     "chars": 1140
+    },
+    {
+     "page": 341,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 2612
+    },
+    {
+     "page": 342,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 3050
+    },
+    {
+     "page": 343,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 3165
+    },
+    {
+     "page": 344,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 2399
+    },
+    {
+     "page": 345,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 3549
+    },
+    {
+     "page": 346,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 3201
+    },
+    {
+     "page": 347,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 2615
+    },
+    {
+     "page": 348,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 2840
+    },
+    {
+     "page": 349,
+     "chapter": 7,
+     "section": "7.3 Alternative Programming Models",
+     "chars": 2857
+    },
+    {
+     "page": 350,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 2793
+    },
+    {
+     "page": 351,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 3106
+    },
+    {
+     "page": 352,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 2773
+    },
+    {
+     "page": 353,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 3776
+    },
+    {
+     "page": 354,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 2932
+    },
+    {
+     "page": 355,
+     "chapter": 7,
+     "section": "7.4 Programming Language Implementation",
+     "chars": 3467
+    },
+    {
+     "page": 370,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 3784
+    },
+    {
+     "page": 371,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 2621
+    },
+    {
+     "page": 372,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 2804
+    },
+    {
+     "page": 373,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 3329
+    },
+    {
+     "page": 374,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 3420
+    },
+    {
+     "page": 375,
+     "chapter": 8,
+     "section": "8.1 Data Management Focus",
+     "chars": 2607
+    },
+    {
+     "page": 376,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 3266
+    },
+    {
+     "page": 377,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 3576
+    },
+    {
+     "page": 378,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 2866
+    },
+    {
+     "page": 379,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 2406
+    },
+    {
+     "page": 380,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 2466
+    },
+    {
+     "page": 381,
+     "chapter": 8,
+     "section": "8.2 Data Management Systems",
+     "chars": 2054
+    },
+    {
+     "page": 382,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 4344
+    },
+    {
+     "page": 383,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 3321
+    },
+    {
+     "page": 384,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2457
+    },
+    {
+     "page": 385,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2583
+    },
+    {
+     "page": 386,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 3800
+    },
+    {
+     "page": 387,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 3394
+    },
+    {
+     "page": 388,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 3047
+    },
+    {
+     "page": 389,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 532
+    },
+    {
+     "page": 390,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2454
+    },
+    {
+     "page": 391,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 4079
+    },
+    {
+     "page": 392,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2113
+    },
+    {
+     "page": 393,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 1688
+    },
+    {
+     "page": 394,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 752
+    },
+    {
+     "page": 395,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2510
+    },
+    {
+     "page": 396,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 4416
+    },
+    {
+     "page": 397,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 3739
+    },
+    {
+     "page": 398,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2720
+    },
+    {
+     "page": 399,
+     "chapter": 8,
+     "section": "8.3 Relational Database Management Systems",
+     "chars": 2603
+    },
+    {
+     "page": 400,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 2854
+    },
+    {
+     "page": 401,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 3446
+    },
+    {
+     "page": 402,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 3667
+    },
+    {
+     "page": 403,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 3225
+    },
+    {
+     "page": 404,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 3052
+    },
+    {
+     "page": 405,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 2482
+    },
+    {
+     "page": 406,
+     "chapter": 8,
+     "section": "8.4 Nonrelational Database Management Systems",
+     "chars": 2484
+    },
+    {
+     "page": 407,
+     "chapter": 8,
+     "section": "8.5 Data Warehousing, Data Lakes, and Business Intelligence",
+     "chars": 3118
+    },
+    {
+     "page": 408,
+     "chapter": 8,
+     "section": "8.5 Data Warehousing, Data Lakes, and Business Intelligence",
+     "chars": 614
+    },
+    {
+     "page": 409,
+     "chapter": 8,
+     "section": "8.5 Data Warehousing, Data Lakes, and Business Intelligence",
+     "chars": 2674
+    },
+    {
+     "page": 410,
+     "chapter": 8,
+     "section": "8.5 Data Warehousing, Data Lakes, and Business Intelligence",
+     "chars": 3121
+    },
+    {
+     "page": 411,
+     "chapter": 8,
+     "section": "8.5 Data Warehousing, Data Lakes, and Business Intelligence",
+     "chars": 2465
+    },
+    {
+     "page": 412,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 3832
+    },
+    {
+     "page": 413,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 3304
+    },
+    {
+     "page": 414,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 4596
+    },
+    {
+     "page": 415,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 3693
+    },
+    {
+     "page": 416,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 2432
+    },
+    {
+     "page": 417,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 2535
+    },
+    {
+     "page": 418,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 2511
+    },
+    {
+     "page": 419,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 4048
+    },
+    {
+     "page": 420,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 3081
+    },
+    {
+     "page": 421,
+     "chapter": 8,
+     "section": "8.6 Data Management for Shallow and Deep Learning Applications",
+     "chars": 2309
+    },
+    {
+     "page": 422,
+     "chapter": 8,
+     "section": "8.7 Informatics and Data Management",
+     "chars": 3254
+    },
+    {
+     "page": 423,
+     "chapter": 8,
+     "section": "8.7 Informatics and Data Management",
+     "chars": 2320
+    }
+   ]
+  }
+ ]
+}
